@@ -6,3 +6,7 @@
 * 论文链接：https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=YGXX201704004&v=06JLxd%25mmd2FfrC1dMzfbSESbk1n3fc47zZgjIyYMFj8kR%25mmd2BDg0EA6EuiUYYdZ%25mmd2BVo9Z7mx
 
 ## sub-2
+* 研究区：北京平原区
+* 研究方法：数据场（matlab实现）、梯度提升决策树（Python实现）
+* 研究目的：定量分析北京平原区地面沉降影响因素的权重
+* 论文链接：https://www.sciencedirect.com/science/article/pii/S0169555X19301114
