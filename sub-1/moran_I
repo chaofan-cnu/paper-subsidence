@@ -1,0 +1,12 @@
+load("D:\\Work\\R\\4.2\\.RData")#加载工作空间
+library(sp)#导入sp包
+library(Matrix)#导入Matrix包
+library(spdep)#导入spdep包
+sub<-read.csv("sub.txt",header=TRUE,skip=1)#读取sub.txt文件
+attach(sub)#将已读的sub数据放入搜索范围内
+subgwt<-read.gwt2nb("sub.GWT",region=ID)#读入空间权重文件
+subdw<-nb2listw(subgwt)#生成listw文件
+str(moran(LS,subdw,length(subgwt),Szero(subdw)))#计算全局莫兰指数值
+
+
+
