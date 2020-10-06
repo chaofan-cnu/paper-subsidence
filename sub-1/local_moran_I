@@ -1,0 +1,15 @@
+load("D:\\Work\\R\\4.2\\.RData")#加载工作空间
+library(sp)#导入sp包
+library(Matrix)#导入Matrix包
+library(spdep)#导入spdep包
+library(xlsx)#导入xlsx包
+sub<-read.csv("sub.txt",header=TRUE,skip=1)#读取sub.txt文件
+attach(sub)#将已读的sub数据放入搜索范围内
+subgwt<-read.gwt2nb("sub.GWT",region=ID)#读入空间权重文件
+subdw<-nb2listw(subgwt)#生成listw文件
+oid<-order(ID)#对数据进行排序
+resI<-localmoran(LS,subdw,p.adjust.method="bonferroni")#计算局部莫兰指数
+printCoefmat(data.frame(resI[oid,],row.names=NAME),check.names=FALSE)#打印系数矩阵
+write.xlsx((data.frame(resI[oid,],row.names=NAME),"output.xlsx")#导出计算结果
+
+
