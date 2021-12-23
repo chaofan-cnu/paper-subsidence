@@ -10,3 +10,9 @@
 * 研究方法：数据场（matlab实现）、梯度提升决策树（Python实现）
 * 研究目的：定量分析北京平原区地面沉降影响因素的权重
 * 论文链接：https://www.sciencedirect.com/science/article/pii/S0169555X19301114
+
+## sub-3
+* 研究区：津保高速铁路
+* 研究方法：小波分解-重构（R语言实现）、随机森林（Python实现）
+* 研究目的：精确预测地面沉降
+* 论文链接：https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDAUTO&filename=GTYG202104005&uniplatform=NZKPT&v=xvP-27TIBgBBgxWrf7MCIXtZUh0SkOk9EzTY6NJxAq0R2SCwDup3qaNVzMLPHfH3
